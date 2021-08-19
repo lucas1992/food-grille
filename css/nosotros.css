@@ -10,3 +10,19 @@
     font-size: 1rem;
     line-height: 1.6;    
 }
+
+iframe {
+    margin-left: 25%;
+}
+
+#nosotrosImagenSeparacion {
+    margin-left: 43%;
+}
+
+#image-nosotros {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}

@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Palette+Mosaic&display=swap');
+
 .menu {
-    margin-left: 40px;
+    margin-left: 0px;
 }
 
 .menu ul {
@@ -46,23 +48,6 @@
     padding-bottom: 3px;
     padding-left: 3px;
 }
-
-#image-home {
-    height: 500px;
-    width: 100%;
-    object-fit: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-#image-menu {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    background-size: cover;
-    background-position: center;
-}
-
 
 @font-face {
   font-family: "FontAwesome";
@@ -118,3 +103,16 @@ body {
 .whatsapp-icon{
     margin-left: 10px;
 }
+
+.titulo1 {
+    color: #db9423;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+}
+
+.mayus {
+    text-transform: uppercase;
+}
+
