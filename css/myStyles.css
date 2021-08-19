@@ -1,0 +1,120 @@
+.menu {
+    margin-left: 40px;
+}
+
+.menu ul {
+	list-style-type: none;
+	margin-left: 10%;
+}
+
+.menu li {
+  background-color: #bed6eb;
+  float: left;
+  margin-right: 15px;
+  padding: 0 4px;
+  font-size: 20px;
+}
+
+.menu button {
+  background-color: #bed6eb;
+}
+
+.menu button h2{
+  background-color: #bed6eb;
+}
+
+.logo {
+	height: 10%;
+	width: 10%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+
+
+.bloque_horizontal div {
+	display: inline;
+	margin-left: 20px;
+}
+
+.button-medium {
+	padding-top: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+}
+
+#image-home {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+#image-menu {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("fontawesome-webfont.woff");
+}
+
+p {
+  font-family: "FontAwesome", sans-serif;
+  font-size: 200%;
+}
+
+body {
+    background-color: #f4f8fb
+}
+
+.first_section {
+    background-color: #deeaf5;
+    height: 140px;
+}
+
+.shopping-icon {
+    margin-left: 38%
+}
+
+.facebook-icon {
+    margin-left: 10px;
+}
+
+.instagram-icon {
+    margin-left: 10px;
+}
+
+.div-pedidos-header {
+    margin-top: 20px;
+}
+
+.div-pedidos-header button {
+    margin-left: 8%;
+    background-color: #e9f1f8;
+}
+
+.div-pedidos-header h2 {
+    padding: 0px;
+    margin: 0px;
+    background-color: #e9f1f8;
+}
+
+.div-pedidos-header a {
+    margin-left: 38%;
+    font-size: 21px;
+}
+
+.whatsapp-icon{
+    margin-left: 10px;
+}

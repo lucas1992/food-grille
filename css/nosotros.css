@@ -1,0 +1,12 @@
+.nosotros-parrafo p {
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+	font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;    
+}
