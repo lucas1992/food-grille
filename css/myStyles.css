@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Palette+Mosaic&display=swap');
 
 .menu {
-    margin-left: 0px;
+    display: block;
+    padding-left: 35%;
+    padding-top: 30px;
+    background-color: #deeaf5;
 }
 
 .menu ul {
 	list-style-type: none;
-	margin-left: 10%;
+	display: inline;
 }
 
 .menu li {
@@ -31,15 +34,19 @@
     background-repeat: no-repeat;
     border-radius: 50%;
     float: left;
-    margin-top: 10px;
+    margin-top: -50px;
     margin-left: 5px;
+    display: inline;
+    position: relative;
+    z-index: 1000;
+    border: solid 2px;
 }
 
 
 
 .bloque_horizontal div {
-	display: inline;
 	margin-left: 20px;
+	display: inline;
 }
 
 .button-medium {
@@ -47,6 +54,7 @@
     padding-right: 3px;
     padding-bottom: 3px;
     padding-left: 3px;
+    margin-left: 30%;
 }
 
 @font-face {
@@ -65,11 +73,11 @@ body {
 
 .first_section {
     background-color: #deeaf5;
-    height: 140px;
+    height: 130px;
 }
 
 .shopping-icon {
-    margin-left: 38%
+    margin-left: 0%
 }
 
 .facebook-icon {
@@ -80,12 +88,8 @@ body {
     margin-left: 10px;
 }
 
-.div-pedidos-header {
-    margin-top: 20px;
-}
 
 .div-pedidos-header button {
-    margin-left: 8%;
     background-color: #e9f1f8;
 }
 
@@ -96,8 +100,9 @@ body {
 }
 
 .div-pedidos-header a {
-    margin-left: 38%;
+    float: right;
     font-size: 21px;
+    margin-right: 10px;
 }
 
 .whatsapp-icon{
@@ -116,3 +121,7 @@ body {
     text-transform: uppercase;
 }
 
+.iconLinks {
+    float: right;
+    margin-right: 10px;
+}
