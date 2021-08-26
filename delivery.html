@@ -9,41 +9,42 @@
 		<script src="https://kit.fontawesome.com/f67804d995.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<nav class="menu">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="menu.html">Menú</a>
-					<ul>
-						<li><a href="menu.html#menuPromocionesDelDia">Promociones del día</a></li>
-						<li><a href="menu.html#menuEntradas">Entradas</a></li>
-						<li><a href="menu.html#menuHamburguesas">Hamburguesas</a></li>
-						<li><a href="menu.html#menuPlatosPrincipales">Platos Principales</a></li>
-						<li><a href="menu.html#menuEnsaladasYMinutas">Ensaladas y Minutas</a></li>
-					</ul>
-				</li>
-				<li><a href="delivery.html">Delivery</a></li>
-				<li><a href="eventos.html">Eventos</a></li>
-				<li><a href="nosotros.html">Quiénes Somos</a></li>
-			</ul>
-		</nav>
-		<section class="first_section">
-			<br>
-			<div class="bloque_horizontal">
+		<div class="menu-div flex-row">
+			<div class="logo flex-column">
 				<img class="logo" src="img/logo_wix.png"/>
-				<div class="iconLinks">
+			</div>
+			<div class="menu flex-column">
+				<nav class="flex-row">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="menu.html">Menú</a>
+							<ul>
+								<li><a href="menu.html#menuPromocionesDelDia">Promociones del día</a></li>
+								<li><a href="menu.html#menuEntradas">Entradas</a></li>
+								<li><a href="menu.html#menuHamburguesas">Hamburguesas</a></li>
+								<li><a href="menu.html#menuPlatosPrincipales">Platos Principales</a></li>
+								<li><a href="menu.html#menuEnsaladasYMinutas">Ensaladas y Minutas</a></li>
+							</ul>
+						</li>
+						<li><a href="delivery.html">Delivery</a></li>
+						<li><a href="eventos.html">Eventos</a></li>
+						<li><a href="nosotros.html">Quiénes Somos</a></li>
+					</ul>
+				</nav>
+				<button class="button-medium"><h2>Hacé tu pedido de delivery online</h2></button>
+			</div>
+			<div class="iconLinks flex-column">
+				<div class="flex-row">
 					<a href="www.google.com.ar" target="blank"><i class="fas fa-shopping-cart fa-2x shopping-icon"></i></a>
 					<a href="www.google.com.ar" target="blank"><i class="fab fa-facebook-square fa-2x facebook-icon"></i></a>
 					<a href="www.google.com.ar" target="blank"><i class="fab fa-instagram fa-2x instagram-icon"></i></a>
+					<a href="www.google.com.ar" target="blank"><i class="fab fa-whatsapp fa-2x whatsapp-icon"></i></a>
 				</div>
-				<br>
-				<br>
-				<br>
-				<div class="div-pedidos-header">
-					<button class="button-medium"><h2>Hacé tu pedido de delivery online</h2></button>
-					<a href="www.google.com.ar" target="blank">+549 2224480430<i class="fab fa-whatsapp fa-2x whatsapp-icon"></i></a>
+				<div class="flex-row number-div">
+					<a href="www.google.com.ar" target="blank">+549 2224480430</a>
 				</div>
 			</div>
-		</section>
+		</div>
 		<section>
 			<img id="image-delivery" src="img/comida_home.jpg" alt="comida_home"/>
 		</section>
@@ -64,16 +65,18 @@
 		</section>
 		<br>		
 		<footer>
-			<div class="bloque_horizontal">
-				<div>
+			<div class="footer flex-row">
+				<div class="footer-direccion">
 					<h5 id="footerDireccion">Rawson 112, San Vicente, Buenos Aires, Argentina</h5>
 				</div>
-				<div class="footer">
-				  <ul>
-					<li><a href="nosotros.html">Quiénes somos</a></li>
-					<li><a href="contactanos.html">Contactanos</a></li>
-					<li><a href="reclamos.html">Reclamos / sugerencias</a></li>
-				  </ul>
+				<div class="footer-nav">
+					<nav>
+					  <ul>
+						<li><a href="nosotros.html">Quiénes somos</a></li>
+						<li><a href="contactanos.html">Contactanos</a></li>
+						<li><a href="reclamos.html">Reclamos / sugerencias</a></li>
+					  </ul>
+					</nav>
 				</div>
 			</div>
 		</footer>
