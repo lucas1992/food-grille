@@ -6,3 +6,12 @@
     background-position: center;
     margin-top: -20px;
 }
+
+.home-novedades {
+    justify-content: center;
+}
+
+.home-novedades img {
+    width: 20%;
+    margin-left: 4%;
+}

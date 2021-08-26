@@ -1,7 +1,3 @@
-.menu-div{
-
-}
-
 #image-menu {
     height: 200px;
     width: 100%;
@@ -9,4 +5,46 @@
     background-size: cover;
     background-position: center;
     margin-top: -20px;
+}
+
+.menu-list {
+    justify-content: center;
+}
+
+.column-menu-list {
+    justify-content: flex-start;
+    width: 40%;
+    margin-left: 5%;
+}
+
+.menu-hr {
+  border-top: 1px solid black;
+  width: 100%;
+}
+
+.titulo-menu {
+    font-size: 18px;
+    font-family: 'Anton', sans-serif;
+    margin: 0px;
+}
+
+.subtitulo-menu {
+    font-size: 12px;
+    margin: 0px;
+    margin-top: -15px;
+}
+
+
+
+.row-precio .titulo-menu {
+    width: 80%;
+    justify-content: flex-start;
+}
+
+.row-precio .precio-menu {
+    width: 20%;
+    font-size: 18px;
+    font-family: 'Anton', sans-serif;
+    margin: 0px;
+    justify-content: flex-end;
 }
