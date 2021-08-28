@@ -149,7 +149,6 @@ body {
 .flex-row {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
 }
 
 .flex-column {
@@ -171,3 +170,50 @@ a {
     text-decoration: none;
     color: black;
 }
+
+.grilla-template-page {
+   display: grid;
+   grid-template-areas:
+     "header"
+     "banner"
+     "novedades"
+     "favoritos"
+     "footer";
+   grid-template-rows: 155px auto auto auto 40px;
+   grid-template-columns: 100%;
+   grid-row-gap: 10px;
+   grid-column-gap: 10px;
+   height: 100vh;
+   margin: 0;
+}
+
+header {
+   grid-area: header;
+}
+footer {
+   grid-area: footer;
+}
+section#novedades {
+   grid-area: novedades;
+}
+section#favoritos {
+   grid-area: favoritos;
+}
+section#banner {
+   grid-area: banner;
+}
+
+nav {
+   grid-area: nav;
+}
+
+
+
+
+
+
+
+
+
+
+
