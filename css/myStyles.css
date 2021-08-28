@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Palette+Mosaic&display=swap');
 
-.menu {
-    margin-left: 30%;
-    margin-top: 15px;
-    width: 30%;
-}
 
 .menu nav ul {
 	list-style-type: none;
 	font-size: 20px;
 	margin-top: 5px;
+}
+
+.menu {
+    justify-self: center;
 }
 
 .menu nav li {
@@ -50,26 +49,12 @@
 }
 
 .logo {
-    height: 145px;
-    width: 145px;
+    height: 180px;
+    width: 180px;
     background-repeat: no-repeat;
     border-radius: 50%;
     z-index: 1000;
     border: solid 2px;
-}
-
-
-
-.bloque_horizontal div {
-	margin-left: 20px;
-	display: inline;
-}
-
-.button-medium {
-    margin-left: 10%;
-    margin-top: 5px;
-    width: 80%;
-    border-radius: 10px;
 }
 
 @font-face {
@@ -86,13 +71,8 @@ body {
     background-color: #f4f8fb
 }
 
-.first_section {
-    background-color: #deeaf5;
-    height: 130px;
-}
-
 .shopping-icon {
-    margin-left: 0%
+    margin-left: 0px;
 }
 
 .facebook-icon {
@@ -103,26 +83,10 @@ body {
     margin-left: 10px;
 }
 
-
-.div-pedidos-header button {
-    background-color: #e9f1f8;
-}
-
-.div-pedidos-header h2 {
-    padding: 0px;
-    margin: 0px;
-    background-color: #e9f1f8;
-}
-
-.div-pedidos-header a {
-    float: right;
-    font-size: 21px;
-    margin-right: 10px;
-}
-
-.whatsapp-icon{
+.whatsapp-icon {
     margin-left: 10px;
 }
+
 
 .titulo1 {
     color: #db9423;
@@ -136,16 +100,6 @@ body {
     text-transform: uppercase;
 }
 
-.iconLinks {
-    margin-left: 20%;
-    margin-top: 15px;
-    justify-content: flex-start;
-}
-
-.iconLinks .flex-row {
-    justify-content: flex-end;
-}
-
 .flex-row {
     display: flex;
     flex-wrap: wrap;
@@ -154,16 +108,6 @@ body {
 .flex-column {
     display: flex;
     flex-flow: column wrap;
-}
-
-.menu-div {
-    justify-content: flex-start;
-    height: 155px;
-    background-color: #deeaf5;
-}
-
-.number-div {
-    margin-top: 15px;
 }
 
 a {
@@ -176,8 +120,7 @@ a {
    grid-template-areas:
      "header"
      "banner"
-     "novedades"
-     "favoritos"
+     "content"
      "footer";
    grid-template-rows: 155px auto auto auto 40px;
    grid-template-columns: 100%;
@@ -193,11 +136,8 @@ header {
 footer {
    grid-area: footer;
 }
-section#novedades {
-   grid-area: novedades;
-}
-section#favoritos {
-   grid-area: favoritos;
+section#content {
+   grid-area: content;
 }
 section#banner {
    grid-area: banner;
@@ -207,13 +147,52 @@ nav {
    grid-area: nav;
 }
 
+.grilla-header-menu {
+   display: grid;
+   grid-template-areas:
+     "logo navMenu social"
+     "logo deliveryButton numeroCel"
+     "logo . .";
+   grid-template-rows: auto auto auto;
+   grid-template-columns: 1fr 3fr 1fr;
+   grid-row-gap: 0px;
+   grid-column-gap: 10px;
+   height: 155px;
+   margin: 0px 15px 0px 15px;
+}
 
 
+.grilla-header-menu #imageLogo {
+    grid-area: logo;
+}
 
+.grilla-header-menu #navMenu {
+    grid-area: navMenu;
+}
 
+.grilla-header-menu #social {
+    grid-area: social;
+    justify-self: end;
+}
 
+.grilla-header-menu #numeroCel {
+    grid-area: numeroCel;
+    justify-self: end;
+    font-family: "FontAwesome", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
 
+.grilla-header-menu #deliveryButton {
+    grid-area: deliveryButton;
+    justify-self: center;
+    width: 60%;
+    font-family: "FontAwesome", sans-serif;
+    border-radius: 10px;
+}
 
-
-
-
+@media only screen and (max-width: 420px) {
+    .home-novedades img {
+        width: 45%;
+    }
+}

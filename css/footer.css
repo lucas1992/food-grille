@@ -3,7 +3,8 @@ footer {
 }
 
 #footerDireccion {
-    margin-left: 20px;
+    margin: 10px 0px 0px 20px;
+    font-size: 15px;
 }
 
 
@@ -11,6 +12,10 @@ footer {
 	list-style-type: none;
 	float: right;
 	display: inline;
+	margin: 10px 20px 0px 20px;
+	padding: 4px 4px 4px 4px;
+	background-color: #bed6eb;
+	border-radius: 5px;
 }
 
 .footer nav ul li {
@@ -36,9 +41,11 @@ footer {
 .footer-direccion {
     width: 50%;
     justify-content: flex-start;
+    align-content: center;
 }
 
 .footer-nav {
     width: 50%;
     justify-content: flex-end;
+    align-content: center;
 }

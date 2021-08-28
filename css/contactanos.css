@@ -37,5 +37,14 @@
 }
 
 #contactanoInputReset {
-    margin-left: 40%;
+    margin-left: 30%;
+}
+
+#image-contactanos {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    margin-top: -20px;
 }

@@ -9,88 +9,89 @@
 		<script src="https://kit.fontawesome.com/f67804d995.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<div class="menu-div flex-row">
-			<div class="logo flex-column">
-				<img class="logo" src="img/logo_wix.png"/>
-			</div>
-			<div class="menu flex-column">
-				<nav class="flex-row">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="menu.html">Menú</a>
+		<div class="grilla-template-page">
+			<header>
+				<div class="grilla-header-menu">
+					<img id="imageLogo" class="logo" src="img/logo_wix.png"/>
+					<div id="navMenu"  class="menu">
+						<nav>
 							<ul>
-								<li><a href="menu.html#menuPromocionesDelDia">Promociones del día</a></li>
-								<li><a href="menu.html#menuEntradas">Entradas</a></li>
-								<li><a href="menu.html#menuHamburguesas">Hamburguesas</a></li>
-								<li><a href="menu.html#menuPlatosPrincipales">Platos Principales</a></li>
-								<li><a href="menu.html#menuEnsaladasYMinutas">Ensaladas y Minutas</a></li>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="menu.html">Menú</a>
+									<ul>
+										<li><a href="menu.html#menuPromocionesDelDia">Promociones del día</a></li>
+										<li><a href="menu.html#menuEntradas">Entradas</a></li>
+										<li><a href="menu.html#menuHamburguesas">Hamburguesas</a></li>
+										<li><a href="menu.html#menuPlatosPrincipales">Platos Principales</a></li>
+										<li><a href="menu.html#menuEnsaladasYMinutas">Ensaladas y Minutas</a></li>
+									</ul>
+								</li>
+								<li><a href="delivery.html">Delivery</a></li>
+								<li><a href="eventos.html">Eventos</a></li>
+								<li><a href="nosotros.html">Quiénes Somos</a></li>
 							</ul>
-						</li>
-						<li><a href="delivery.html">Delivery</a></li>
-						<li><a href="eventos.html">Eventos</a></li>
-						<li><a href="nosotros.html">Quiénes Somos</a></li>
-					</ul>
-				</nav>
-				<button class="button-medium"><h2>Hacé tu pedido de delivery online</h2></button>
-			</div>
-			<div class="iconLinks flex-column">
-				<div class="flex-row">
-					<a href="www.google.com.ar" target="blank"><i class="fas fa-shopping-cart fa-2x shopping-icon"></i></a>
-					<a href="www.google.com.ar" target="blank"><i class="fab fa-facebook-square fa-2x facebook-icon"></i></a>
-					<a href="www.google.com.ar" target="blank"><i class="fab fa-instagram fa-2x instagram-icon"></i></a>
-					<a href="www.google.com.ar" target="blank"><i class="fab fa-whatsapp fa-2x whatsapp-icon"></i></a>
+						</nav>
+					</div>
+					<div id="social">
+						<a href="www.google.com.ar" target="blank"><i class="fas fa-shopping-cart fa-2x shopping-icon"></i></a>
+						<a href="www.google.com.ar" target="blank"><i class="fab fa-facebook-square fa-2x facebook-icon"></i></a>
+						<a href="www.google.com.ar" target="blank"><i class="fab fa-instagram fa-2x instagram-icon"></i></a>
+						<a href="www.google.com.ar" target="blank"><i class="fab fa-whatsapp fa-2x whatsapp-icon"></i></a>
+					</div>
+					<div id="numeroCel">
+						<a href="www.google.com.ar" target="blank">+549 2224480430</a>
+					</div>
+					<button id="deliveryButton"><h2>Hacé tu pedido de delivery online</h2></button>
 				</div>
-				<div class="flex-row number-div">
-					<a href="www.google.com.ar" target="blank">+549 2224480430</a>
-				</div>
+			</header>
+			<section id="banner">
+				<img id="image-nosotros" src="img/comida_home.jpg" alt="comida_home"/>
+			</section>
+			<div id="content">
+				<section>
+					<h2 class="titulo1">Acerca de nosotros</h2>
+				</section>
+				<br>
+				<section>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/T3fw4OuJcl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</section>
+				<br>
+				<section class="nosotros-parrafo">
+						<img class="logoNosotros" src="img/separacion_nosotros.jpeg" alt="logo1" id="nosotrosImagenSeparacion"/>
+						<br>
+						<br>
+						<p>
+							Corría el año 1994 cuando Diego y su esposa Claudia se asentaron con su familia a la vera de la ruta 6 y pusieron una pequeña fábrica de pastas artesanales.
+							Con el correr de los meses fue creciendo y haciéndose conocida, bajo el nombre de “Food Grille”. El comercio era una novedad en la zona en aquella época.
+						</p>
+						<p>
+							A base de esfuerzo, angustias y mucho trabajo, comenzó a prosperar la pequeña firma, se elaboraban pastas artesanales conservando algunas recetas de sus antiguos dueños y más adelante en el tiempo se anexó la elaboración de productos de rotisería.
+						</p>
+						<p>
+							Hoy en día el menú es el más completo de la zona y tambien de los más premiados en "TripAdvisor" ganando numerosos premios que no hacen más que confirmar la dedicación que sus dueños ponen en cada uno de sus detalles.
+						</p>
+				</section>
+				<br>
+				<br>
+				<br>
 			</div>
+			<footer>
+				<div class="footer flex-row">
+					<div class="footer-direccion">
+						<h5 id="footerDireccion">Rawson 112, San Vicente, Buenos Aires, Argentina</h5>
+					</div>
+					<div class="footer-nav">
+						<nav>
+						  <ul>
+							<li><a href="nosotros.html">Quiénes somos</a></li>
+							<li><a href="contactanos.html">Contactanos</a></li>
+							<li><a href="reclamos.html">Reclamos / sugerencias</a></li>
+						  </ul>
+						</nav>
+					</div>
+				</div>
+			</footer>
 		</div>
-		<section>
-			<img id="image-nosotros" src="img/menu.jpg" alt="comida_home"/>
-		</section>
-		<br>
-		<section>
-			<h2 class="titulo1">Acerca de nosotros</h2>
-		</section>
-		<br>
-		<section>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/T3fw4OuJcl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</section>
-		<br>
-		<section class="nosotros-parrafo">
-				<img class="logoNosotros" src="img/separacion_nosotros.jpeg" alt="logo1" id="nosotrosImagenSeparacion"/>
-				<br>
-				<br>
-				<p>
-					Corría el año 1994 cuando Diego y su esposa Claudia se asentaron con su familia a la vera de la ruta 6 y pusieron una pequeña fábrica de pastas artesanales. 
-				    Con el correr de los meses fue creciendo y haciéndose conocida, bajo el nombre de “Food Grille”. El comercio era una novedad en la zona en aquella época.
-				</p>
-				<p>
-					A base de esfuerzo, angustias y mucho trabajo, comenzó a prosperar la pequeña firma, se elaboraban pastas artesanales conservando algunas recetas de sus antiguos dueños y más adelante en el tiempo se anexó la elaboración de productos de rotisería.
-				</p>
-				<p>
-					Hoy en día el menú es el más completo de la zona y tambien de los más premiados en "TripAdvisor" ganando numerosos premios que no hacen más que confirmar la dedicación que sus dueños ponen en cada uno de sus detalles.
-				</p>
-		</section>
-		<br>
-		<br>
-		<br>	
-		<footer>
-			<div class="footer flex-row">
-				<div class="footer-direccion">
-					<h5 id="footerDireccion">Rawson 112, San Vicente, Buenos Aires, Argentina</h5>
-				</div>
-				<div class="footer-nav">
-					<nav>
-					  <ul>
-						<li><a href="nosotros.html">Quiénes somos</a></li>
-						<li><a href="contactanos.html">Contactanos</a></li>
-						<li><a href="reclamos.html">Reclamos / sugerencias</a></li>
-					  </ul>
-					</nav>
-				</div>
-			</div>
-		</footer>
 	</body>
 </html>
 
