@@ -7,6 +7,11 @@
 	margin-top: 5px;
 }
 
+.menu nav ul :hover {
+  transition: 1s;
+  background-color: #82baea;
+}
+
 .menu {
     justify-self: center;
 }
@@ -158,7 +163,8 @@ nav {
    grid-row-gap: 0px;
    grid-column-gap: 10px;
    height: 155px;
-   margin: 0px 15px 0px 15px;
+   padding: 15px 15px 0px 15px;
+   background-image: linear-gradient(#F1F2B5, #135058);
 }
 
 
@@ -189,10 +195,6 @@ nav {
     width: 60%;
     font-family: "FontAwesome", sans-serif;
     border-radius: 10px;
-}
+    background: radial-gradient(#abbaab, #ffffff);
 
-@media only screen and (max-width: 420px) {
-    .home-novedades img {
-        width: 45%;
-    }
 }

@@ -1,5 +1,6 @@
 footer {
-    background-color: #93bcde;
+    background-image: linear-gradient(to right, #F1F2B5, #135058);
+    padding: 10px 15px 0px 15px;
 }
 
 #footerDireccion {
@@ -12,10 +13,16 @@ footer {
 	list-style-type: none;
 	float: right;
 	display: inline;
-	margin: 10px 20px 0px 20px;
+	margin: 0px 20px 10px 20px;
 	padding: 4px 4px 4px 4px;
 	background-color: #bed6eb;
 	border-radius: 5px;
+}
+
+.footer nav ul :hover {
+  transition: 1s;
+  font-size: 16px;
+  background-color: #82baea;
 }
 
 .footer nav ul li {
