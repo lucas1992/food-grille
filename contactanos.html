@@ -17,7 +17,7 @@
 		<div class="grilla-template-page">
 			<header>
 				<div class="row header-menu">
-					<div class="col-md-3 col-xs-4">
+					<div class="col-md-3 col-xs-4 logo-div">
 						<img id="imageLogo" class="logo" src="img/logo_wix.png"/>
 					</div>
 					<div class="col-md-9 col-xs-8">
@@ -68,37 +68,51 @@
 			<section id="banner">
 				<img id="image-contactanos" src="img/comida_home.jpg" alt="comida_home"/>
 			</section>
-			<div id="content">
+			<div id="content" class="container">
 				<section>
 					<h2 class="titulo1">Contactanos</h2>
 				</section>
 				<br>
 				<br>
-				<section class="section-form">
-					<form action="" name="contacto">
-						<label class="label-form" for="contactanosNombre"> Nombre: </label>
-						<input class="input-form" name="nombre" id="contactanosNombre" required />
-						<br>
-						<label class="label-form" for="contactanosApellido"> Apellido: </label>
-						<input class="input-form" name="apellido" id="contactanosApellido" />
-						<br>
-						<label class="label-form" for="contactanosEmail"> Email: </label>
-						<input class="input-form" name="email" type="email" id="contactanosEmail" />
-						<br>
-						<select name="select_estado_civil">
-						  <option value="soltero" selected>Soltero/a</option>
-						  <option value="casado">Casado/a</option>
-						  <option value="divorciado">Divorciado/a</option>
-						  <option value="viudo">Viudo/a</option>
-						</select>
-						<br>
-						<label id="contactanosRecibirPromociones"><input type="checkbox" id="cbox1" value=""> ¿Desea recibir promociones? </label>
-						<br>
-						<textarea rows="15" cols="80">Ingrese aquí su consulta. Responderemos a la brevedad.</textarea>
-						<br>
-						<input id="contactanoInputReset" type="reset" value="Limpiar"/>
-						<input type="submit" value="Enviar"/>
-					</form>
+				<section class="row section-form">
+					<div class="col-md-6 col-xs-12">
+						<form role="form" action="" name="contacto">
+							<div class="form-group form-inline">
+								<label for="contactanosNombre"> Nombre: </label>
+								<input class="form-control" name="nombre" id="contactanosNombre" required />
+							</div>
+							<br>
+							<div class="form-group form-inline">
+								<label for="contactanosApellido"> Apellido: </label>
+								<input class="form-control" name="apellido" id="contactanosApellido" />
+							</div>
+							<br>
+							<div class="form-group form-inline">
+								<label for="contactanosEmail"> Email: </label>
+								<input class="form-control" name="email" type="email" id="contactanosEmail" />
+							</div>
+							<br>
+							<div class="form-group">
+								<select name="select_estado_civil" class="custom-select">
+								  <option value="soltero" selected>Soltero/a</option>
+								  <option value="casado">Casado/a</option>
+								  <option value="divorciado">Divorciado/a</option>
+								  <option value="viudo">Viudo/a</option>
+								</select>
+							</div>
+							<br>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> ¿Desea recibir promociones?
+								</label>
+							</div>
+							<br>
+							<textarea rows="15" cols="80">Ingrese aquí su consulta. Responderemos a la brevedad.</textarea>
+							<br>
+							<button id="contactanoInputReset" type="reset" class="btn btn-primary mb-2">Limpiar</button>
+							<button type="submit" class="btn btn-primary mb-2">Enviar</button>
+						</form>
+					</div>
 				</section>
 				<br>
 				<br>

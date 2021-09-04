@@ -16,7 +16,7 @@
 		<div class="grilla-template-page">
 			<header>
 				<div class="row header-menu">
-					<div class="col-md-3 col-xs-4">
+					<div class="col-md-3 col-xs-4 logo-div">
 						<img id="imageLogo" class="logo" src="img/logo_wix.png"/>
 					</div>
 					<div class="col-md-9 col-xs-8">
@@ -67,30 +67,38 @@
 			<section id="banner">
 				<img id="image-reclamos" src="img/comida_home.jpg" alt="comida_home"/>
 			</section>
-			<div id="content">
+			<div id="content" class="container">
 				<section>
 					<h2 class="titulo1">Reclamos / Sugerencias</h2>
 				</section>
 				<br>
-				<section id="sectionForm">
-					<form action="" name="reclamo">
-						<label class="label-form" for="reclamosNombre"> Nombre: </label>
-						<input class="input-form" name="nombre" id="reclamosNombre" required />
-						<br>
-						<label class="label-form" for="reclamosApellido"> Apellido: </label>
-						<input class="input-form" name="apellido" id="reclamosApellido" />
-						<br>
-						<label class="label-form" for="reclamosEmail"> Email: </label>
-						<input class="input-form" name="email" type="email" id="reclamosEmail" />
-						<br>
-						<label><input type="radio" value="" name="options" checked> Reclamo </label>
-						<label><input type="radio" value="" name="options"> Sugerencia </label>
-						<br>
-						<textarea rows="15" cols="80">Ingrese aquí su reclamo o sugerencia.</textarea>
-						<br>
-						<input id="inputLimpiar" type="reset" value="Limpiar"/>
-						<input type="submit" value="Enviar"/>
-					</form>
+				<section class="row section-form">
+					<div class="col-md-6 col-xs-12">
+						<form action="" role="form" name="reclamo">
+							<div class="form-group form-inline">
+								<label for="reclamosNombre"> Nombre: </label>
+								<input class="form-control" name="nombre" id="reclamosNombre" required />
+							</div>
+							<br>
+							<div class="form-group form-inline">
+								<label for="reclamosApellido"> Apellido: </label>
+								<input class="form-control" name="apellido" id="reclamosApellido" />
+							</div>
+							<br>
+							<div class="form-group form-inline">
+								<label for="reclamosEmail"> Email: </label>
+								<input class="form-control" name="email" type="email" id="reclamosEmail" />
+							</div>
+							<br>
+							<label><input type="radio" value="" name="options" checked> Reclamo </label>
+							<label><input type="radio" value="" name="options"> Sugerencia </label>
+							<br>
+							<textarea rows="15" cols="80">Ingrese aquí su reclamo o sugerencia.</textarea>
+							<br>
+							<button id="inputLimpiar" type="reset" class="btn btn-primary mb-2">Limpiar</button>
+							<button type="submit" class="btn btn-primary mb-2">Enviar</button>
+						</form>
+					</div>
 				</section>
 				<br>
 			</div>
