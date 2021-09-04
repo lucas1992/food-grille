@@ -2,74 +2,94 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Food Grille Truck</title>
-		<link rel="stylesheet" href="css/myStyles.css" />
-		<link rel="stylesheet" href="css/index.css" />
-		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/custom/myStyles.css" />
+		<link rel="stylesheet" href="css/custom/index.css" />
+		<link rel="stylesheet" href="css/custom/footer.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap-responsive.css" />
+		<script href="js/bootstrap.js" crossorigin="anonymous"></script>
 		<script src="https://kit.fontawesome.com/f67804d995.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<div class="grilla-template-page">
 			<header>
-				<div class="grilla-header-menu">
-					<img id="imageLogo" class="logo" src="img/logo_wix.png"/>
-					<div id="navMenu"  class="menu">
-						<nav>
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="menu.html">Menú</a>
-									<ul>
-										<li><a href="menu.html#menuPromocionesDelDia">Promociones del día</a></li>
-										<li><a href="menu.html#menuEntradas">Entradas</a></li>
-										<li><a href="menu.html#menuHamburguesas">Hamburguesas</a></li>
-										<li><a href="menu.html#menuPlatosPrincipales">Platos Principales</a></li>
-										<li><a href="menu.html#menuEnsaladasYMinutas">Ensaladas y Minutas</a></li>
-									</ul>
-								</li>
-								<li><a href="delivery.html">Delivery</a></li>
-								<li><a href="eventos.html">Eventos</a></li>
-								<li><a href="nosotros.html">Quiénes Somos</a></li>
-							</ul>
-						</nav>
+				<div class="row header-menu">
+					<div class="col-md-3 col-xs-4">
+						<img id="imageLogo" class="logo" src="img/logo_wix.png"/>
 					</div>
-					<div id="social">
-						<a href="www.google.com.ar" target="blank"><i class="fas fa-shopping-cart fa-2x shopping-icon"></i></a>
-						<a href="www.google.com.ar" target="blank"><i class="fab fa-facebook-square fa-2x facebook-icon"></i></a>
-						<a href="www.google.com.ar" target="blank"><i class="fab fa-instagram fa-2x instagram-icon"></i></a>
-						<a href="www.google.com.ar" target="blank"><i class="fab fa-whatsapp fa-2x whatsapp-icon"></i></a>
+					<div class="col-md-9 col-xs-8">
+						<div class="row">
+							<div class="col-md-8 col-xs-12">
+								<div id="navMenu" class="menu">
+							<nav>
+								<ul>
+									<li class="nav-item"><a href="index.html">Home</a></li>
+									<li class="nav-item"><a href="menu.html">Menú</a>
+										<ul>
+											<li class="nav-item"><a href="menu.html#menuPromocionesDelDia">Promociones del día</a></li>
+											<li class="nav-item"><a href="menu.html#menuEntradas">Entradas</a></li>
+											<li class="nav-item"><a href="menu.html#menuHamburguesas">Hamburguesas</a></li>
+											<li class="nav-item"><a href="menu.html#menuPlatosPrincipales">Platos Principales</a></li>
+											<li class="nav-item"><a href="menu.html#menuEnsaladasYMinutas">Ensaladas y Minutas</a></li>
+										</ul>
+									</li>
+									<li class="nav-item"><a href="delivery.html">Delivery</a></li>
+									<li class="nav-item"><a href="eventos.html">Eventos</a></li>
+									<li class="nav-item"><a href="nosotros.html">Quiénes Somos</a></li>
+								</ul>
+							</nav>
+						</div>
+							</div>
+							<div class="col-md-4 col-xs-12">
+								<div id="social">
+									<a href="www.google.com.ar" target="blank"><i class="fas fa-shopping-cart fa-2x shopping-icon"></i></a>
+									<a href="www.google.com.ar" target="blank"><i class="fab fa-facebook-square fa-2x facebook-icon"></i></a>
+									<a href="www.google.com.ar" target="blank"><i class="fab fa-instagram fa-2x instagram-icon"></i></a>
+									<a href="www.google.com.ar" target="blank"><i class="fab fa-whatsapp fa-2x whatsapp-icon"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8 col-xs-12">
+								<center><button type="buttom" class="btn" id="deliveryButton"><h6>Hacé tu pedido de delivery online</h6></button></center>
+							</div>
+							<div class="col-md-4 col-xs-12">
+								<div id="numeroCel">
+							<a href="www.google.com.ar" target="blank">+549 2224480430</a>
+						</div>
+							</div>
+						</div>
 					</div>
-					<div id="numeroCel">
-						<a href="www.google.com.ar" target="blank">+549 2224480430</a>
-					</div>
-					<button id="deliveryButton"><h2>Hacé tu pedido de delivery online</h2></button>
 				</div>
 			</header>
 			<section id="banner">
 				<img id="image-home" src="img/comida_home.jpg" alt="comida_home"/>
 			</section>
-			<div id="content">
+			<div id="content" class="container">
 				<section id="novedades">
 					<h2 class="titulo1">Novedades!</h2>
-					<div class="flex-row home-novedades">
-						<div class="imgHomeDiv">
+					<div class="row home-novedades">
+						<div class="col-md-3 col-xs-6 imgHomeDiv">
 							<img src="img/comida_1.jpg"/>
 							  <div class="middle">
 								<div class="text">Burger</div>
 							  </div>
 						</div>
-						<div class="imgHomeDiv">
+						<div class="col-md-3 col-xs-6 imgHomeDiv">
 							<img src="img/comida_2.jpeg"/>
 							  <div class="middle">
 								<div class="text">Pastas</div>
 							  </div>
 						</div>
-						<div class="imgHomeDiv">
+						<div class="col-md-3 col-xs-6 imgHomeDiv">
 							<img src="img/comida_3.jpg"/>
 							  <div class="middle">
 								<div class="text">Tacos</div>
 							  </div>
 						</div>
-						<div class="imgHomeDiv">
+						<div class="col-md-3 col-xs-6 imgHomeDiv">
 							<img src="img/comida_4.jpg"/>
 							  <div class="middle">
 								<div class="text">Ensalada</div>
@@ -78,14 +98,18 @@
 					</div>
 				</section>
 				<section id="favoritos">
-					<h2 class="titulo1">Las más pedidas!</h2>
-					<div>
-						<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis urna a velit volutpat, quis condimentum magna varius. Morbi rhoncus, velit vitae accumsan vestibulum, libero magna imperdiet diam, eget viverra lectus enim in nulla. Nulla semper ex a est porttitor luctus. Etiam consectetur egestas eros id tristique. Donec at libero quis erat faucibus vestibulum non in tellus. Sed tristique ultricies diam, eu porttitor tellus porttitor eget. Integer id nibh imperdiet, vestibulum urna nec, pharetra nulla. Maecenas laoreet rhoncus magna, in congue nibh scelerisque eu. Pellentesque eget nunc quam. In gravida ante in erat blandit, nec lobortis ipsum lobortis. Quisque dictum, massa quis porttitor bibendum, ligula nisi imperdiet elit, vitae fringilla augue ligula nec elit. Maecenas ut dui dictum, mollis purus vel, dapibus lacus. Etiam turpis metus, fermentum vitae iaculis non, consectetur eu tortor. Aenean rutrum ac urna vel viverra.
-						</p>
-						<p>
-						Integer ac tortor at quam lacinia mattis. Donec tempor enim sit amet ligula pretium, sit amet pharetra metus interdum. Donec neque ligula, fringilla at cursus aliquet, dignissim at erat. In imperdiet semper sem, eget congue ipsum pretium et. Nulla a placerat sem. Fusce gravida tempus ipsum in sagittis. Aenean tincidunt rutrum odio, ut faucibus risus. Ut ut velit elementum, semper magna tincidunt, molestie turpis. Fusce eget justo lectus. Nulla erat nisl, vulputate id cursus nec, malesuada blandit tortor. Mauris id mauris eu orci ullamcorper rhoncus. Curabitur dapibus ipsum sit amet accumsan maximus. Proin fringilla enim ut euismod scelerisque. In hac habitasse platea dictumst. Donec ut nibh venenatis mauris euismod hendrerit.
-						</p>
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="titulo1">Las más pedidas!</h2>
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis urna a velit volutpat, quis condimentum magna varius. Morbi rhoncus, velit vitae accumsan vestibulum, libero magna imperdiet diam, eget viverra lectus enim in nulla. Nulla semper ex a est porttitor luctus. Etiam consectetur egestas eros id tristique. Donec at libero quis erat faucibus vestibulum non in tellus. Sed tristique ultricies diam, eu porttitor tellus porttitor eget. Integer id nibh imperdiet, vestibulum urna nec, pharetra nulla. Maecenas laoreet rhoncus magna, in congue nibh scelerisque eu. Pellentesque eget nunc quam. In gravida ante in erat blandit, nec lobortis ipsum lobortis. Quisque dictum, massa quis porttitor bibendum, ligula nisi imperdiet elit, vitae fringilla augue ligula nec elit. Maecenas ut dui dictum, mollis purus vel, dapibus lacus. Etiam turpis metus, fermentum vitae iaculis non, consectetur eu tortor. Aenean rutrum ac urna vel viverra.
+							</p>
+						</div>
 					</div>
 				</section>
 			</div>

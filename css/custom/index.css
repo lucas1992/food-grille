@@ -10,20 +10,21 @@
 
 .home-novedades {
     justify-content: center;
+    margin-bottom: 20px;
 }
-
 .home-novedades div {
-    margin-left: 4%;
-    width: 20%;
-
+    height: 200px;
 }
 
 .home-novedades div img {
+    height: 100%;
     width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .imgHomeDiv {
-    position: relative;
+    background-size: cover;
 }
 
 .imgHomeDiv:hover .middle {
@@ -39,6 +40,7 @@
   opacity: 0;
   position: absolute;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -48,12 +50,6 @@
   color: white;
   font-size: 16px;
   padding: 16px 62px 16px 62px;
-}
-
-
-
-@media only screen and (max-width: 420px) {
-    .home-novedades img {
-        width: 45%;
-    }
+  height: 50% !important;
+  margin-top: 25%;
 }

@@ -4,7 +4,7 @@
 .menu nav ul {
 	list-style-type: none;
 	font-size: 20px;
-	margin-top: 5px;
+	background-color: #bed6eb;
 }
 
 .menu nav ul :hover {
@@ -12,12 +12,12 @@
   background-color: #82baea;
 }
 
+
 .menu {
     justify-self: center;
 }
 
 .menu nav li {
-    background-color: #bed6eb;
     margin-right: 15px;
     padding: 4px 4px 4px 4px;
     display: inline;
@@ -30,9 +30,10 @@
 	position: absolute;
 	display: none;
 	width: 200px;
-	padding-top:5px;
 	padding-left: 10px;
     margin-left: 25px;
+    background-color: #bed6eb;
+     border-radius: 5px;
 }
 
 .menu nav ul ul li {
@@ -46,10 +47,6 @@
 }
 
 .menu nav button {
-  background-color: #bed6eb;
-}
-
-.menu nav button h2{
   background-color: #bed6eb;
 }
 
@@ -99,6 +96,7 @@ body {
     word-spacing: 5px;
     font-family: 'Anton', sans-serif;
     letter-spacing: 3px;
+    margin-bottom: 20px;
 }
 
 .mayus {
@@ -152,46 +150,23 @@ nav {
    grid-area: nav;
 }
 
-.grilla-header-menu {
-   display: grid;
-   grid-template-areas:
-     "logo navMenu social"
-     "logo deliveryButton numeroCel"
-     "logo . .";
-   grid-template-rows: auto auto auto;
-   grid-template-columns: 1fr 3fr 1fr;
-   grid-row-gap: 0px;
-   grid-column-gap: 10px;
+.header-menu {
    height: 155px;
    padding: 15px 15px 0px 15px;
    background-image: linear-gradient(#F1F2B5, #135058);
 }
 
-
-.grilla-header-menu #imageLogo {
-    grid-area: logo;
+.header-menu #social {
+    justify-content: right;
 }
 
-.grilla-header-menu #navMenu {
-    grid-area: navMenu;
-}
-
-.grilla-header-menu #social {
-    grid-area: social;
-    justify-self: end;
-}
-
-.grilla-header-menu #numeroCel {
-    grid-area: numeroCel;
-    justify-self: end;
+.header-menu #numeroCel {
     font-family: "FontAwesome", sans-serif;
     font-size: 20px;
     font-weight: bold;
 }
 
-.grilla-header-menu #deliveryButton {
-    grid-area: deliveryButton;
-    justify-self: center;
+.header-menu #deliveryButton {
     width: 60%;
     font-family: "FontAwesome", sans-serif;
     border-radius: 10px;
