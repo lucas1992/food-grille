@@ -1,0 +1,81 @@
+.header__menu {
+   height: 155px;
+   padding: 15px 15px 0px 15px;
+   background-image: linear-gradient(#F1F2B5, #135058);
+   #social {
+        justify-content: right;
+   }
+   #numeroCel {
+        font-family: "FontAwesome", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+   }
+   #deliveryButton {
+        width: 60%;
+        font-family: "FontAwesome", sans-serif;
+        border-radius: 10px;
+        background: radial-gradient(#abbaab, #ffffff);
+    }
+}
+
+.logo__div{
+    z-index: 1000;
+}
+
+.logo__img {
+    height: 180px;
+    width: 180px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    z-index: 1000;
+    border: solid 2px;
+}
+
+footer {
+   grid-area: footer;
+}
+
+.menu {
+    justify-self: center;
+}
+
+.menu__nav {
+
+    li {
+        margin-right: 15px;
+        padding: 4px 4px 4px 4px;
+        display: inline;
+        position: relative;
+        width: 100%;
+        border-radius: 5px;
+    }
+    ul {
+        list-style-type: none;
+        font-size: 20px;
+        background-color: #bed6eb;
+        :hover {
+          transition: 1s;
+          background-color: #82baea;
+        }
+        ul {
+            position: absolute;
+            display: none;
+            width: 200px;
+            padding-left: 10px;
+            margin-left: 25px;
+            background-color: #bed6eb;
+            border-radius: 5px;
+            z-index: 1000;
+            li {
+            	display: block;
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+        li:hover {
+            ul {
+                display: block;
+            }
+        }
+    }
+}
