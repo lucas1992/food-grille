@@ -1,0 +1,11 @@
+#image-delivery {
+    margin-top: -120px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    clip-path: inset(100px 0px 0px 0px);
+    z-index: 0;
+}
