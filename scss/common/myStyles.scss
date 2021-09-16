@@ -1,65 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Palette+Mosaic&display=swap');
 
-
-.menu nav ul {
-	list-style-type: none;
-	font-size: 20px;
-	background-color: #bed6eb;
-}
-
-.menu nav ul :hover {
-  transition: 1s;
-  background-color: #82baea;
-}
-
-
-.menu {
-    justify-self: center;
-}
-
-.menu nav li {
-    margin-right: 15px;
-    padding: 4px 4px 4px 4px;
-    display: inline;
-    position: relative;
-    width: 100%;
-    border-radius: 5px;
-}
-
-.menu nav ul ul {
-	position: absolute;
-	display: none;
-	width: 200px;
-	padding-left: 10px;
-    margin-left: 25px;
-    background-color: #bed6eb;
-    border-radius: 5px;
-    z-index: 1000;
-}
-
-.menu nav ul ul li {
-	display: block;
-	width: 100%;
-	font-size: 14px;
-}
-
-.menu nav ul li:hover ul {
-	display: block;
-}
-
-.menu nav button {
-  background-color: #bed6eb;
-}
-
-.logo {
-    height: 180px;
-    width: 180px;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    z-index: 1000;
-    border: solid 2px;
-}
-
 @font-face {
   font-family: "FontAwesome";
   src: url("fontawesome-webfont.woff");
@@ -134,12 +74,6 @@ a {
    margin: 0;
 }
 
-header {
-   grid-area: header;
-}
-footer {
-   grid-area: footer;
-}
 section#content {
    grid-area: content;
 }
@@ -151,30 +85,95 @@ nav {
    grid-area: nav;
 }
 
-.header-menu {
+
+header {
+   grid-area: header;
+}
+
+.header__menu {
    height: 155px;
    padding: 15px 15px 0px 15px;
    background-image: linear-gradient(#F1F2B5, #135058);
+   #social {
+        justify-content: right;
+   }
+   #numeroCel {
+        font-family: "FontAwesome", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+   }
+   #deliveryButton {
+        width: 60%;
+        font-family: "FontAwesome", sans-serif;
+        border-radius: 10px;
+        background: radial-gradient(#abbaab, #ffffff);
+    }
 }
 
-.header-menu #social {
-    justify-content: right;
-}
-
-.header-menu #numeroCel {
-    font-family: "FontAwesome", sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.header-menu #deliveryButton {
-    width: 60%;
-    font-family: "FontAwesome", sans-serif;
-    border-radius: 10px;
-    background: radial-gradient(#abbaab, #ffffff);
-
-}
-
-.logo-div{
+.logo__div{
     z-index: 1000;
+}
+
+.logo__img {
+    height: 180px;
+    width: 180px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    z-index: 1000;
+    border: solid 2px;
+}
+
+footer {
+   grid-area: footer;
+}
+
+
+.menu nav ul {
+	list-style-type: none;
+	font-size: 20px;
+	background-color: #bed6eb;
+}
+
+.menu nav ul :hover {
+  transition: 1s;
+  background-color: #82baea;
+}
+
+
+.menu {
+    justify-self: center;
+}
+
+.menu nav li {
+    margin-right: 15px;
+    padding: 4px 4px 4px 4px;
+    display: inline;
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.menu nav ul ul {
+	position: absolute;
+	display: none;
+	width: 200px;
+	padding-left: 10px;
+    margin-left: 25px;
+    background-color: #bed6eb;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.menu nav ul ul li {
+	display: block;
+	width: 100%;
+	font-size: 14px;
+}
+
+.menu nav ul li:hover ul {
+	display: block;
+}
+
+.menu nav button {
+  background-color: #bed6eb;
 }

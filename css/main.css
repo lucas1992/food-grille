@@ -66,49 +66,40 @@ footer {
   background-image: linear-gradient(to right, #F1F2B5, #135058);
   padding: 10px 15px 0px 15px; }
 
-#footerDireccion {
-  margin: 10px 0px 0px 20px;
-  font-size: 15px; }
-
-.footer nav ul {
-  list-style-type: none;
-  float: right;
-  display: inline;
-  margin: 0px 20px 10px 20px;
-  padding: 4px 4px 4px 4px;
-  background-color: #bed6eb;
-  border-radius: 5px; }
-
-.footer nav ul :hover {
-  transition: 1s;
-  font-size: 16px;
-  background-color: #82baea; }
-
-.footer nav ul li {
-  margin-right: 10px;
-  padding: 0 4px;
-  list-style-type: none;
-  display: inline; }
-
-.footer nav ul li a {
-  text-decoration: none;
-  padding-left: 5px;
-  padding-right: 5px; }
-
-.footer nav ul li a {
-  text-decoration: none;
-  padding-left: 5px;
-  padding-right: 5px; }
-
-.footer-direccion {
+.footer__direccion {
   width: 50%;
   justify-content: flex-start;
-  align-content: center; }
+  align-content: center;
+  font-size: 15px; }
 
-.footer-nav {
+.footer__direccion--margin {
+  margin: 10px 0px 0px 20px; }
+
+.footer__nav {
   width: 50%;
   justify-content: flex-end;
   align-content: center; }
+  .footer__nav ul {
+    list-style-type: none;
+    float: right;
+    display: inline;
+    margin: 0px 20px 10px 20px;
+    padding: 4px 4px 4px 4px;
+    background-color: #bed6eb;
+    border-radius: 5px; }
+    .footer__nav ul li {
+      margin-right: 10px;
+      padding: 0 4px;
+      list-style-type: none;
+      display: inline; }
+      .footer__nav ul li a {
+        text-decoration: none;
+        padding-left: 5px;
+        padding-right: 5px; }
+  .footer__nav ul :hover {
+    transition: 1s;
+    font-size: 16px;
+    background-color: #82baea; }
 
 #image-home {
   height: 200px;
@@ -271,55 +262,6 @@ textarea {
   margin-top: -20px;
   z-index: 0; }
 
-.menu nav ul {
-  list-style-type: none;
-  font-size: 20px;
-  background-color: #bed6eb; }
-
-.menu nav ul :hover {
-  transition: 1s;
-  background-color: #82baea; }
-
-.menu {
-  justify-self: center; }
-
-.menu nav li {
-  margin-right: 15px;
-  padding: 4px 4px 4px 4px;
-  display: inline;
-  position: relative;
-  width: 100%;
-  border-radius: 5px; }
-
-.menu nav ul ul {
-  position: absolute;
-  display: none;
-  width: 200px;
-  padding-left: 10px;
-  margin-left: 25px;
-  background-color: #bed6eb;
-  border-radius: 5px;
-  z-index: 1000; }
-
-.menu nav ul ul li {
-  display: block;
-  width: 100%;
-  font-size: 14px; }
-
-.menu nav ul li:hover ul {
-  display: block; }
-
-.menu nav button {
-  background-color: #bed6eb; }
-
-.logo {
-  height: 180px;
-  width: 180px;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  z-index: 1000;
-  border: solid 2px; }
-
 @font-face {
   font-family: "FontAwesome";
   src: url("fontawesome-webfont.woff"); }
@@ -376,12 +318,6 @@ a {
   height: 100vh;
   margin: 0; }
 
-header {
-  grid-area: header; }
-
-footer {
-  grid-area: footer; }
-
 section#content {
   grid-area: content; }
 
@@ -391,24 +327,76 @@ section#banner {
 nav {
   grid-area: nav; }
 
-.header-menu {
+header {
+  grid-area: header; }
+
+.header__menu {
   height: 155px;
   padding: 15px 15px 0px 15px;
   background-image: linear-gradient(#F1F2B5, #135058); }
+  .header__menu #social {
+    justify-content: right; }
+  .header__menu #numeroCel {
+    font-family: "FontAwesome", sans-serif;
+    font-size: 20px;
+    font-weight: bold; }
+  .header__menu #deliveryButton {
+    width: 60%;
+    font-family: "FontAwesome", sans-serif;
+    border-radius: 10px;
+    background: radial-gradient(#abbaab, #ffffff); }
 
-.header-menu #social {
-  justify-content: right; }
-
-.header-menu #numeroCel {
-  font-family: "FontAwesome", sans-serif;
-  font-size: 20px;
-  font-weight: bold; }
-
-.header-menu #deliveryButton {
-  width: 60%;
-  font-family: "FontAwesome", sans-serif;
-  border-radius: 10px;
-  background: radial-gradient(#abbaab, #ffffff); }
-
-.logo-div {
+.logo__div {
   z-index: 1000; }
+
+.logo__img {
+  height: 180px;
+  width: 180px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  z-index: 1000;
+  border: solid 2px; }
+
+footer {
+  grid-area: footer; }
+
+.menu nav ul {
+  list-style-type: none;
+  font-size: 20px;
+  background-color: #bed6eb; }
+
+.menu nav ul :hover {
+  transition: 1s;
+  background-color: #82baea; }
+
+.menu {
+  justify-self: center; }
+
+.menu nav li {
+  margin-right: 15px;
+  padding: 4px 4px 4px 4px;
+  display: inline;
+  position: relative;
+  width: 100%;
+  border-radius: 5px; }
+
+.menu nav ul ul {
+  position: absolute;
+  display: none;
+  width: 200px;
+  padding-left: 10px;
+  margin-left: 25px;
+  background-color: #bed6eb;
+  border-radius: 5px;
+  z-index: 1000; }
+
+.menu nav ul ul li {
+  display: block;
+  width: 100%;
+  font-size: 14px; }
+
+.menu nav ul li:hover ul {
+  display: block; }
+
+.menu nav button {
+  background-color: #bed6eb; }
