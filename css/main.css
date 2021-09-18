@@ -110,6 +110,12 @@
   height: 50% !important;
   margin-top: 25%; }
 
+#carrousel_main {
+  max-height: 500px !important;
+  width: 90%;
+  overflow: hidden;
+  margin: auto; }
+
 #image-menu {
   height: 200px;
   width: 100%;
@@ -325,14 +331,6 @@ footer {
       font-size: 14px; }
   .menu__nav ul li:hover ul {
     display: block; }
-
-@font-face {
-  font-family: "FontAwesome";
-  src: url("fontawesome-webfont.woff"); }
-
-p {
-  font-family: "FontAwesome", sans-serif;
-  font-size: 200%; }
 
 body {
   background-color: #f4f8fb; }

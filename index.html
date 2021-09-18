@@ -6,7 +6,7 @@
 		<title>Food Grille Truck</title>
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/bootstrap.css" />
-		<link rel="stylesheet" href="css/bootstrap-responsive.css" />
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
 		<script href="js/bootstrap.js" crossorigin="anonymous"></script>
 		<script src="https://kit.fontawesome.com/f67804d995.js" crossorigin="anonymous"></script>
 	</head>
@@ -65,7 +65,45 @@
 			<section id="banner">
 				<img id="image-home" src="img/comida_home.jpg" alt="comida_home"/>
 			</section>
+
 			<div id="content" class="container">
+				<section id="favoritos">
+					<h2 class="titulo1">Las más pedidas!</h2>
+					<div id="carrousel_main" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ul class="carousel-indicators">
+						  <li data-target="#carrousel_main" data-slide-to="0" class="active"></li>
+						  <li data-target="#carrousel_main" data-slide-to="1"></li>
+						  <li data-target="#carrousel_main" data-slide-to="2"></li>
+						  <li data-target="#carrousel_main" data-slide-to="3"></li>
+						</ul>
+
+						<!-- The slideshow -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="img/comida_5.jpg" alt="Burger" class="center-block">
+							</div>
+							<div class="carousel-item">
+							  <img src="img/comida_6.jpg" alt="Pastas" class="center-block">
+							</div>
+							<div class="carousel-item">
+							  <img src="img/comida_7.jpg" alt="Tacos" class="center-block">
+							</div>
+							<div class="carousel-item">
+							  <img src="img/comida_8.jpg" alt="Ensalada" class="center-block">
+							</div>
+						</div>
+
+						<!-- Left and right controls -->
+						<a class="carousel-control-prev" href="#carrousel_main" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#carrousel_main" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+
+				</section>
 				<section id="novedades">
 					<h2 class="titulo1">Novedades!</h2>
 					<div class="row home-novedades">
@@ -95,21 +133,6 @@
 						</div>
 					</div>
 				</section>
-				<section id="favoritos">
-					<div class="row">
-						<div class="col-md-12">
-							<h2 class="titulo1">Las más pedidas!</h2>
-						</div>
-
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis urna a velit volutpat, quis condimentum magna varius. Morbi rhoncus, velit vitae accumsan vestibulum, libero magna imperdiet diam, eget viverra lectus enim in nulla. Nulla semper ex a est porttitor luctus. Etiam consectetur egestas eros id tristique. Donec at libero quis erat faucibus vestibulum non in tellus. Sed tristique ultricies diam, eu porttitor tellus porttitor eget. Integer id nibh imperdiet, vestibulum urna nec, pharetra nulla. Maecenas laoreet rhoncus magna, in congue nibh scelerisque eu. Pellentesque eget nunc quam. In gravida ante in erat blandit, nec lobortis ipsum lobortis. Quisque dictum, massa quis porttitor bibendum, ligula nisi imperdiet elit, vitae fringilla augue ligula nec elit. Maecenas ut dui dictum, mollis purus vel, dapibus lacus. Etiam turpis metus, fermentum vitae iaculis non, consectetur eu tortor. Aenean rutrum ac urna vel viverra.
-							</p>
-						</div>
-					</div>
-				</section>
 			</div>
 			<footer>
 				<div class="footer flex-row">
@@ -128,5 +151,8 @@
 				</div>
 			</footer>
 		</div>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	</body>
 </html>
