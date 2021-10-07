@@ -9,149 +9,165 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css" />
 		<link rel="stylesheet" href="assets/css/bootstrap/bootstrap-responsive.min.css" />
-		<link rel="stylesheet" href="assets/css/fontawesome/all.css" />
-
-        <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/ico/favicon.png">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-
-		<script href="assets/js/bootstrap/bootstrap.js" crossorigin="anonymous"></script>
-		<script href="assets/js/fontawesome/fontawesome.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	</head>
 	<body>
-		<div class="grilla-template-page">
-			<header>
-				<div class="row header__menu">
-					<div class="col-md-3 col-xs-4 logo__div">
-						<img id="imageLogo" class="logo__img" alt="logo" src="img/logo_wix.png"/>
-					</div>
-					<div class="col-md-9 col-xs-8">
-						<div class="row">
-							<div class="col-md-8 col-xs-12">
-								<div class="menu">
-									<nav class="menu__nav">
-										<ul>
-											<li class="nav-item"><a href="index.html">Home</a></li>
-											<li class="nav-item"><a href="menu.html">Menú</a>
-												<ul>
-													<li class="nav-item"><a href="menu.html#menuPromocionesDelDia">Promociones del día</a></li>
-													<li class="nav-item"><a href="menu.html#menuEntradas">Entradas</a></li>
-													<li class="nav-item"><a href="menu.html#menuHamburguesas">Hamburguesas</a></li>
-													<li class="nav-item"><a href="menu.html#menuPlatosPrincipales">Platos Principales</a></li>
-													<li class="nav-item"><a href="menu.html#menuEnsaladasYMinutas">Ensaladas y Minutas</a></li>
-												</ul>
-											</li>
-											<li class="nav-item"><a href="delivery.html">Delivery</a></li>
-											<li class="nav-item"><a href="eventos.html">Eventos</a></li>
-											<li class="nav-item"><a href="nosotros.html">Quiénes Somos</a></li>
-										</ul>
-									</nav>
-								</div>
-							</div>
-							<div class="col-md-4 col-xs-12">
-								<div id="social">
-									<a href="www.google.com.ar" target="blank"><i class="fas fa-shopping-cart fa-2x shopping-icon"></i></a>
-									<a href="www.google.com.ar" target="blank"><i class="fab fa-facebook-square fa-2x facebook-icon"></i></a>
-									<a href="www.google.com.ar" target="blank"><i class="fab fa-instagram fa-2x instagram-icon"></i></a>
-									<a href="www.google.com.ar" target="blank"><i class="fab fa-whatsapp fa-2x whatsapp-icon"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-8 col-xs-12">
-								<center><button type="buttom" class="btn" id="deliveryButton"><h6>Hacé tu pedido de delivery online</h6></button></center>
-							</div>
-							<div class="col-md-4 col-xs-12">
-								<div id="numeroCel">
-							<a href="www.google.com.ar" target="blank">+549 2224480430</a>
-						</div>
-							</div>
-						</div>
-					</div>
+		<!-- Wrapper -->
+		<div class="wrapper">
+
+			<!-- Sidebar -->
+			<nav class="sidebar">
+				<!-- close sidebar menu -->
+				<div class="dismiss">
+					<i class="fas fa-arrow-left"></i>
 				</div>
-			</header>
-			<section id="banner">
-				<img id="image-contactanos" src="img/comida_home.jpg" alt="comida_home"/>
-			</section>
-			<div id="content" class="container">
-				<section>
-					<h1 class="titulo1"><title>Contactanos</title></h1>
-				</section>
-				<br>
-				<br>
-				<section class="row section-form">
-					<div class="col-md-6 col-xs-12">
-						<form role="form" action="" name="contacto">
-							<div class="form-group form-inline">
-								<label for="contactanosNombre"> Nombre: </label>
-								<input class="form-control" name="nombre" id="contactanosNombre" required />
+
+				<ul class="list-unstyled menu-elements">
+					<li class="active">
+						<a href="index.html" role="button"><i class="fas fa-home"></i> Home</a>
+					</li>
+					<li>
+						<a data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" role="button" aria-controls="otherSections">
+							<i class="fas fa-sync"></i>Menú
+						</a>
+						<ul class="dropdown-menu" id="otherSections">
+							<li><a href="menu.html#menuPromocionesDelDia">Promociones del día</a></li>
+							<li><a href="menu.html#menuEntradas">Entradas</a></li>
+							<li><a href="menu.html#menuHamburguesas">Hamburguesas</a></li>
+							<li><a href="menu.html#menuPlatosPrincipales">Platos Principales</a></li>
+							<li><a href="menu.html#menuEnsaladasYMinutas">Ensaladas y Minutas</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="delivery.html"><i class="fas fa-cog"></i> Delivery</a>
+					</li>
+					<li>
+						<a href="eventos.html"><i class="fas fa-user"></i> Eventos</a>
+					</li>
+					<li><a href="nosotros.html">Quiénes somos</a></li>
+					<li><a href="contactanos.html">Contactanos</a></li>
+					<li><a href="reclamos.html">Reclamos / sugerencias</a></li>
+				</ul>
+				<div class="to-top">
+					<a class="btn btn-primary btn-customized-3" href="#" role="button">
+	                    <i class="fas fa-arrow-up"></i> Top
+	                </a>
+				</div>
+			</nav>
+			<!-- End sidebar -->
+
+			<!-- Dark overlay -->
+    		<div class="overlay"></div>
+
+			<!-- Content -->
+			<div class="content">
+				<!-- open sidebar menu -->
+				<a class="btn btn-primary btn-customized open-menu" href="#" role="button">
+                    <i class="fas fa-align-left"></i> <span>Menu</span>
+                </a>
+				<div class="grilla-template-page">
+					<div class="row header__menu">
+						<div class="offset-xs-1 offset-md-1 col-md-6 col-xs-11">
+							<center><button type="buttom" class="btn" id="deliveryButton"><h6>Hacé tu pedido de delivery online</h6></button></center>
+						</div>
+						<div class="col-md-2 col-xs-5">
+							<div id="numeroCel">
+								<a href="www.google.com.ar" target="blank">+549 2224480430</a>
 							</div>
-							<br>
-							<div class="form-group form-inline">
-								<label for="contactanosApellido"> Apellido: </label>
-								<input class="form-control" name="apellido" id="contactanosApellido" />
+						</div>
+						<div class="col-md-3 col-xs-5">
+							<div id="social">
+								<a href="www.google.com.ar" target="blank"><i class="fas fa-shopping-cart fa-2x shopping-icon"></i></a>
+								<a href="www.google.com.ar" target="blank"><i class="fab fa-facebook-square fa-2x facebook-icon"></i></a>
+								<a href="www.google.com.ar" target="blank"><i class="fab fa-instagram fa-2x instagram-icon"></i></a>
+								<a href="www.google.com.ar" target="blank"><i class="fab fa-whatsapp fa-2x whatsapp-icon"></i></a>
 							</div>
-							<br>
-							<div class="form-group form-inline">
-								<label for="contactanosEmail"> Email: </label>
-								<input class="form-control" name="email" type="email" id="contactanosEmail" />
-							</div>
-							<br>
-							<div class="form-group">
-								<select name="select_estado_civil" class="custom-select">
-								  <option value="soltero" selected>Soltero/a</option>
-								  <option value="casado">Casado/a</option>
-								  <option value="divorciado">Divorciado/a</option>
-								  <option value="viudo">Viudo/a</option>
-								</select>
-							</div>
-							<br>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> ¿Desea recibir promociones?
-								</label>
-							</div>
-							<br>
-							<textarea rows="15" cols="80">Ingrese aquí su consulta. Responderemos a la brevedad.</textarea>
-							<br>
-							<button id="contactanoInputReset" type="reset" class="btn btn-primary mb-2">Limpiar</button>
-							<button type="submit" class="btn btn-primary mb-2">Enviar</button>
-						</form>
+						</div>
 					</div>
-				</section>
-				<br>
-				<br>
+					<section id="banner">
+						<img id="image-contactanos" src="assets/img/comida_home.jpg" alt="comida_home"/>
+					</section>
+					<div id="content" class="container">
+						<section>
+							<h1 class="titulo1"><title>Contactanos</title></h1>
+						</section>
+						<br>
+						<br>
+						<section class="row section-form">
+							<div class="col-md-6 col-xs-12">
+								<form role="form" action="" name="contacto">
+									<div class="form-group form-inline">
+										<label for="contactanosNombre"> Nombre: </label>
+										<input class="form-control" name="nombre" id="contactanosNombre" required />
+									</div>
+									<br>
+									<div class="form-group form-inline">
+										<label for="contactanosApellido"> Apellido: </label>
+										<input class="form-control" name="apellido" id="contactanosApellido" />
+									</div>
+									<br>
+									<div class="form-group form-inline">
+										<label for="contactanosEmail"> Email: </label>
+										<input class="form-control" name="email" type="email" id="contactanosEmail" />
+									</div>
+									<br>
+									<div class="form-group">
+										<select name="select_estado_civil" class="custom-select">
+										  <option value="soltero" selected>Soltero/a</option>
+										  <option value="casado">Casado/a</option>
+										  <option value="divorciado">Divorciado/a</option>
+										  <option value="viudo">Viudo/a</option>
+										</select>
+									</div>
+									<br>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox"> ¿Desea recibir promociones?
+										</label>
+									</div>
+									<br>
+									<textarea rows="15" cols="80">Ingrese aquí su consulta. Responderemos a la brevedad.</textarea>
+									<br>
+									<button id="contactanoInputReset" type="reset" class="btn btn-primary mb-2">Limpiar</button>
+									<button type="submit" class="btn btn-primary mb-2">Enviar</button>
+								</form>
+							</div>
+						</section>
+						<br>
+						<br>
+					</div>
+					<footer>
+						<div class="footer flex-row">
+							<div class="footer__direccion">
+								<h5 class="footer__direccion footer__direccion--margin">Rawson 112, San Vicente, Buenos Aires, Argentina</h5>
+							</div>
+							<div class="footer__nav">
+								<nav>
+								  <ul>
+									<li><a href="nosotros.html">Quiénes somos</a></li>
+									<li><a href="contactanos.html">Contactanos</a></li>
+									<li><a href="reclamos.html">Reclamos / sugerencias</a></li>
+								  </ul>
+								</nav>
+							</div>
+						</div>
+					</footer>
+				</div>
 			</div>
-			<footer>
-				<div class="footer flex-row">
-					<div class="footer__direccion">
-						<h5 class="footer__direccion footer__direccion--margin">Rawson 112, San Vicente, Buenos Aires, Argentina</h5>
-					</div>
-					<div class="footer__nav">
-						<nav>
-						  <ul>
-							<li><a href="nosotros.html">Quiénes somos</a></li>
-							<li><a href="contactanos.html">Contactanos</a></li>
-							<li><a href="reclamos.html">Reclamos / sugerencias</a></li>
-						  </ul>
-						</nav>
-					</div>
-				</div>
-			</footer>
+			<!-- End content -->
 		</div>
-		<script href="assets/js/jquery/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
-		<script src="assets/js/jquery/jquery-migrate-3.0.0.min.js"></script>
+		<!-- End wrapper -->
+		<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script href="assets/js/bootstrap/bootstrap.min.js" crossorigin="anonymous"></script>
-        <script href="assets/js/bootstrap/bootstrap.bundle.min.js" crossorigin="anonymous"></script><!-- Menu Toggle Script -->
+		<script src="assets/js/bootstrap/bootstrap.min.js" crossorigin="anonymous"></script>
+		<script src="assets/js/fontawesome/fontawesome.js" crossorigin="anonymous"></script>
+		<script src="assets/js/bootstrap/bootstrap.bundle.js"></script><!-- Menu Toggle Script -->
         <script src="assets/js/jquery/jquery.backstretch.min.js"></script>
-        <script src="assets/js/sidebar/wow.min.js"></script>
         <script src="assets/js/jquery/jquery.waypoints.min.js"></script>
         <script src="assets/js/sidebar/jquery.myScrollbar.concat.min.js"></script>
         <script src="assets/js/sidebar/scripts.js"></script>
 	</body>
 </html>
+
 

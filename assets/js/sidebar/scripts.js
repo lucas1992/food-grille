@@ -1,16 +1,4 @@
-
-function scroll_to(clicked_link, nav_height) {
-	var element_class = clicked_link.attr('href').replace('#', '.');
-	var scroll_to = 0;
-	if(element_class != '.top-content') {
-		element_class += '-container';
-		scroll_to = $(element_class).offset().top - nav_height;
-	}
-	if($(window).scrollTop() != scroll_to) {
-		$('html, body').stop().animate({scrollTop: scroll_to}, 1000);
-	}
-}
-
+$('.dropdown-toggle').dropdown();
 
 jQuery(document).ready(function() {
 	
@@ -30,6 +18,7 @@ jQuery(document).ready(function() {
         $('.collapse.show').toggleClass('show');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
     });
+
     /* change sidebar style */
 	$('a.btn-customized-dark').on('click', function(e) {
 		e.preventDefault();
@@ -47,11 +36,7 @@ jQuery(document).ready(function() {
 	/*
 	    Navigation
 	*/
-	$('a.scroll-link').on('click', function(e) {
-		e.preventDefault();
-		scroll_to($(this), 0);
-	});
-	
+
 	$('.to-top a').on('click', function(e) {
 		e.preventDefault();
 		if($(window).scrollTop() != 0) {
@@ -88,44 +73,5 @@ jQuery(document).ready(function() {
     $('.section-4-container').backstretch("assets/img/backgrounds/2.jpg");
     $('.section-6-container').backstretch("assets/img/backgrounds/1.jpg");
     
-    /*
-	    Wow
-	*/
-	new WOW().init();
-	
-	/*
-	    Contact form
-	*/
-	$('.section-6-form form input[type="text"], .section-6-form form textarea').on('focus', function() {
-		$('.section-6-form form input[type="text"], .section-6-form form textarea').removeClass('input-error');
-	});
-	$('.section-6-form form').submit(function(e) {
-		e.preventDefault();
-	    $('.section-6-form form input[type="text"], .section-6-form form textarea').removeClass('input-error');
-	    var postdata = $('.section-6-form form').serialize();
-	    $.ajax({
-	        type: 'POST',
-	        url: 'assets/contact.php',
-	        data: postdata,
-	        dataType: 'json',
-	        success: function(json) {
-	            if(json.emailMessage != '') {
-	                $('.section-6-form form .contact-email').addClass('input-error');
-	            }
-	            if(json.subjectMessage != '') {
-	                $('.section-6-form form .contact-subject').addClass('input-error');
-	            }
-	            if(json.messageMessage != '') {
-	                $('.section-6-form form textarea').addClass('input-error');
-	            }
-	            if(json.emailMessage == '' && json.subjectMessage == '' && json.messageMessage == '') {
-	                $('.section-6-form form').fadeOut('fast', function() {
-	                    $('.section-6-form').append('<p>Thanks for contacting us! We will get back to you very soon.</p>');
-	                    $('.section-6-container').backstretch("resize");
-	                });
-	            }
-	        }
-	    });
-	});
-	
+
 });
