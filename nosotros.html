@@ -8,8 +8,7 @@
 		<title>Food Grille Truck</title>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css" />
-		<link rel="stylesheet" href="assets/css/bootstrap/bootstrap-responsive.min.css" />
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/fontawesome/all.css">
 	</head>
 	<body>
 		<!-- Wrapper -->
@@ -65,18 +64,16 @@
 				<a class="btn btn-primary btn-customized open-menu" href="#" role="button">
                     <i class="fas fa-align-left"></i> <span>Menu</span>
                 </a>
-				<div class="grilla-template-page">
-					<div class="row header__menu">
-						<div class="offset-xs-1 offset-md-1 col-md-6 col-xs-11">
-							<center><button type="buttom" class="btn" id="deliveryButton"><h6>Hacé tu pedido de delivery online</h6></button></center>
-						</div>
-						<div class="col-md-2 col-xs-5">
-							<div id="numeroCel">
+				<div class="row header__menu">
+					<div class="offset-sm-3 col-sm-9 offset-md-1 col-md-5 header__menu__col-delivery">
+						<button type="buttom" class="btn" id="deliveryButton"><h6>Hacé tu pedido de delivery online</h6></button>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<div class="row">
+							<div id="numeroCel" class="col-md-6 col-sm-6 text-right">
 								<a href="www.google.com.ar" target="blank">+549 2224480430</a>
 							</div>
-						</div>
-						<div class="col-md-3 col-xs-5">
-							<div id="social">
+							<div id="social" class="col-md-6 col-sm-6 text-right">
 								<a href="www.google.com.ar" target="blank"><i class="fas fa-shopping-cart fa-2x shopping-icon"></i></a>
 								<a href="www.google.com.ar" target="blank"><i class="fab fa-facebook-square fa-2x facebook-icon"></i></a>
 								<a href="www.google.com.ar" target="blank"><i class="fab fa-instagram fa-2x instagram-icon"></i></a>
@@ -84,54 +81,56 @@
 							</div>
 						</div>
 					</div>
-					<section id="banner">
-						<img id="image-nosotros" src="assets/img/comida_home.jpg" alt="comida_home"/>
-					</section>
-					<div id="content" class="container">
-						<section>
-							<h1 class="titulo1"><title>Acerca de nosotros</title></h1>
-						</section>
-						<br>
-						<section>
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/T3fw4OuJcl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</section>
-						<br>
-						<section class="nosotros-parrafo">
-								<img class="logoNosotros" src="assets/img/separacion_nosotros.jpeg" alt="logo1" id="nosotrosImagenSeparacion"/>
-								<br>
-								<br>
-								<p>
-									Corría el año 1994 cuando Diego y su esposa Claudia se asentaron con su familia a la vera de la ruta 6 y pusieron una pequeña fábrica de pastas artesanales.
-									Con el correr de los meses fue creciendo y haciéndose conocida, bajo el nombre de “Food Grille”. El comercio era una novedad en la zona en aquella época.
-								</p>
-								<p>
-									A base de esfuerzo, angustias y mucho trabajo, comenzó a prosperar la pequeña firma, se elaboraban pastas artesanales conservando algunas recetas de sus antiguos dueños y más adelante en el tiempo se anexó la elaboración de productos de rotisería.
-								</p>
-								<p>
-									Hoy en día el menú es el más completo de la zona y tambien de los más premiados en "TripAdvisor" ganando numerosos premios que no hacen más que confirmar la dedicación que sus dueños ponen en cada uno de sus detalles.
-								</p>
-						</section>
-						<br>
-						<br>
-						<br>
-					</div>
-					<footer>
-						<div class="footer flex-row">
-							<div class="footer__direccion">
-								<h5 class="footer__direccion footer__direccion--margin">Rawson 112, San Vicente, Buenos Aires, Argentina</h5>
-							</div>
-							<div class="footer__nav">
-								<nav>
-								  <ul>
-									<li><a href="nosotros.html">Quiénes somos</a></li>
-									<li><a href="contactanos.html">Contactanos</a></li>
-									<li><a href="reclamos.html">Reclamos / sugerencias</a></li>
-								  </ul>
-								</nav>
-							</div>
-						</div>
-					</footer>
 				</div>
+				<section id="banner">
+					<img id="image-nosotros" src="assets/img/comida_home.jpg" alt="comida_home"/>
+				</section>
+				<div id="content" class="container">
+					<section>
+						<h1 class="titulo1"><title>Acerca de nosotros</title></h1>
+					</section>
+					<br>
+					<section>
+						<center>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/T3fw4OuJcl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</center>
+					</section>
+					<br>
+					<section class="nosotros-parrafo">
+							<center><img class="logoNosotros" src="assets/img/separacion_nosotros.jpeg" alt="logo1" id="nosotrosImagenSeparacion"/></center>
+							<br>
+							<br>
+							<p>
+								Corría el año 1994 cuando Diego y su esposa Claudia se asentaron con su familia a la vera de la ruta 6 y pusieron una pequeña fábrica de pastas artesanales.
+								Con el correr de los meses fue creciendo y haciéndose conocida, bajo el nombre de “Food Grille”. El comercio era una novedad en la zona en aquella época.
+							</p>
+							<p>
+								A base de esfuerzo, angustias y mucho trabajo, comenzó a prosperar la pequeña firma, se elaboraban pastas artesanales conservando algunas recetas de sus antiguos dueños y más adelante en el tiempo se anexó la elaboración de productos de rotisería.
+							</p>
+							<p>
+								Hoy en día el menú es el más completo de la zona y tambien de los más premiados en "TripAdvisor" ganando numerosos premios que no hacen más que confirmar la dedicación que sus dueños ponen en cada uno de sus detalles.
+							</p>
+					</section>
+					<br>
+					<br>
+					<br>
+				</div>
+				<footer>
+					<div class="footer flex-row">
+						<div class="footer__direccion">
+							<h5 class="footer__direccion footer__direccion--margin">Rawson 112, San Vicente, Buenos Aires, Argentina</h5>
+						</div>
+						<div class="footer__nav">
+							<nav>
+							  <ul>
+								<li><a href="nosotros.html">Quiénes somos</a></li>
+								<li><a href="contactanos.html">Contactanos</a></li>
+								<li><a href="reclamos.html">Reclamos</a></li>
+							  </ul>
+							</nav>
+						</div>
+					</div>
+				</footer>
 			</div>
 			<!-- End content -->
 		</div>

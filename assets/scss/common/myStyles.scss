@@ -26,6 +26,7 @@ body {
     font-family: 'Anton', sans-serif;
     letter-spacing: 3px;
     margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .mayus {
@@ -47,21 +48,6 @@ a {
     color: black;
 }
 
-.grilla-template-page {
-   display: grid;
-   grid-template-areas:
-     "header"
-     "banner"
-     "content"
-     "footer";
-   grid-template-rows: 155px auto auto auto 40px;
-   grid-template-columns: 100%;
-   grid-row-gap: 10px;
-   grid-column-gap: 10px;
-   height: 100vh;
-   margin: 0;
-}
-
 section#content {
    grid-area: content;
 }
@@ -81,5 +67,6 @@ footer {
    grid-area: footer;
 }
 
-
-
+body {
+    background-color: #f4f4df !important;
+}

@@ -1,0 +1,45 @@
+-------------------------------------- Presupuesto Web --------------------------------------
+
+Válido hasta: 31/11/2021
+Nombre: Food Grillé
+Fecha: 08/10/2021 
+
+
+----------------------------------------------------------------------------------------------
+ Descripción                                    | Cant.    | Precio Total (Pesos Argentinos)
+----------------------------------------------------------------------------------------------
+01 Diseño del sitio web.                           1         $50000
+
+02 Desarrollo del sitio web                        1         $100000
+
+03 SEO Standar                                     1         $20000
+
+04 Instalación + Configuración Página WEB          1         $35000  
+
+   
+						     TOTAL:    $205000
+----------------------------------------------------------------------------------------------
+
+
+Servicios Detallados:
+
+01 Diseño del sitio web:
+	Se ofreceran diferentes plantillas como base de partida y se irá customizando junto con el cliente y sus necesidades.
+	Diseño de las páginas ( Home, Menú, Contactanos, delivery, eventos, nosotros y reclamos) en versión Desktop y Mobile.
+	
+
+02 Desarrollo del sitio web:
+	Creación y desarrollo de las páginas diseñadas previamente.
+
+03 SEO Standar:
+	Instalación de Google Analytics para medir las visitas del site.
+	Registrar el site en Search Console.
+	Enviar Sitemap a Google.
+	
+04 Instalación + Configuración Página WEB:
+	Se utlizará un hosting gratuito. Se ofreceran opciones de diferentes hostings con precios a cargo del cliente.
+	Se instalaran todos los componentes necesarios para el correcto funcionamieno del sitio web (incluyendo node JS). 
+	
+
+Tiempo estimato total: 370 Hs.
+Tiempo máximo de finalización desde que comienza el proyecto: 3 meses.   

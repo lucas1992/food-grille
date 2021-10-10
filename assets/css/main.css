@@ -40,10 +40,10 @@
   object-fit: cover;
   background-size: cover;
   background-position: center;
-  margin-top: -20px; }
+  margin-top: 0px; }
 
 #image-delivery {
-  margin-top: -120px;
+  margin-top: -100px;
   height: 300px;
   width: 100%;
   object-fit: cover;
@@ -54,7 +54,7 @@
   z-index: 0; }
 
 #image-eventos {
-  margin-top: -20px;
+  margin-top: 0px;
   height: 300px;
   width: 100%;
   object-fit: cover;
@@ -70,7 +70,7 @@
   object-fit: cover;
   background-size: cover;
   background-position: center;
-  margin-top: -20px;
+  margin-top: 0px;
   z-index: 0; }
 
 .home-novedades {
@@ -124,7 +124,7 @@
   object-fit: cover;
   background-size: cover;
   background-position: center;
-  margin-top: -20px;
+  margin-top: 0px;
   z-index: 0; }
 
 .menu-list {
@@ -173,19 +173,13 @@
   line-height: 1.6;
   z-index: 0; }
 
-iframe {
-  margin-left: 35%; }
-
-#nosotrosImagenSeparacion {
-  margin-left: 46%; }
-
 #image-nosotros {
   height: 200px;
   width: 100%;
   object-fit: cover;
   background-size: cover;
   background-position: center;
-  margin-top: -20px; }
+  margin-top: 0px; }
 
 .logoNosotros {
   height: 10%;
@@ -228,18 +222,21 @@ textarea {
   object-fit: cover;
   background-size: cover;
   background-position: center;
-  margin-top: -20px;
+  margin-top: 0px;
   z-index: 0; }
 
 footer {
-  background-image: linear-gradient(to right, #F1F2B5, #135058);
+  background-image: linear-gradient(to right, #f1bb79, #e0ca00);
   padding: 10px 15px 0px 15px; }
 
 .footer__direccion {
   width: 50%;
   justify-content: flex-start;
   align-content: center;
-  font-size: 15px; }
+  font-size: 15px;
+  margin-bottom: 1%; }
+  .footer__direccion h5 {
+    color: white; }
 
 .footer__direccion--margin {
   margin: 10px 0px 0px 20px; }
@@ -254,7 +251,7 @@ footer {
     display: inline;
     margin: 0px 20px 10px 20px;
     padding: 4px 4px 4px 4px;
-    background-color: #bed6eb;
+    background-color: #efd0a1;
     border-radius: 5px; }
     .footer__nav ul li {
       margin-right: 10px;
@@ -270,21 +267,39 @@ footer {
     font-size: 16px;
     background-color: #82baea; }
 
+@media (max-width: 767px) {
+  .footer__nav {
+    width: 100% !important;
+    justify-content: flex-start !important; }
+  .footer__nav ul {
+    float: left; }
+  .footer__direccion {
+    width: 100% !important; } }
+
 .header__menu {
-  height: 155px;
-  padding: 15px 15px 0px 15px;
-  background-image: linear-gradient(#F1F2B5, #135058); }
+  padding: 15px 15px 15px 15px;
+  background-image: linear-gradient(#f1bb79, #e0ca00); }
   .header__menu #social {
     justify-content: right; }
+    .header__menu #social a {
+      color: #f35b3f; }
   .header__menu #numeroCel {
     font-family: "FontAwesome", sans-serif;
     font-size: 20px;
     font-weight: bold; }
+    .header__menu #numeroCel a {
+      color: #f35b3f; }
   .header__menu #deliveryButton {
     width: 60%;
     font-family: "FontAwesome", sans-serif;
     border-radius: 10px;
-    background: radial-gradient(#abbaab, #ffffff); }
+    background: radial-gradient(#f35b3f, #b13e28);
+    white-space: normal;
+    color: white; }
+
+.header__menu__col-delivery {
+  display: block;
+  text-align: -webkit-center; }
 
 .logo__div {
   z-index: 1000; }
@@ -334,6 +349,25 @@ footer {
   .menu__nav ul li:hover ul {
     display: block; }
 
+@media (max-width: 767px) {
+  #social {
+    width: 50%;
+    margin-top: 3%; }
+  #numeroCel {
+    width: 50%;
+    margin-top: 3%; }
+  .header__menu__col-delivery {
+    text-align: -webkit-right; } }
+
+@media (max-width: 440px) {
+  #social {
+    width: 60%;
+    margin-top: 3%; }
+  #numeroCel {
+    width: 40%;
+    margin-top: 3%;
+    font-size: 13px !important; } }
+
 body {
   background-color: #f4f8fb; }
 
@@ -355,7 +389,8 @@ body {
   word-spacing: 5px;
   font-family: 'Anton', sans-serif;
   letter-spacing: 3px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-top: 30px; }
 
 .mayus {
   text-transform: uppercase; }
@@ -372,16 +407,6 @@ a {
   text-decoration: none;
   color: black; }
 
-.grilla-template-page {
-  display: grid;
-  grid-template-areas: "header" "banner" "content" "footer";
-  grid-template-rows: 155px auto auto auto 40px;
-  grid-template-columns: 100%;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
-  height: 100vh;
-  margin: 0; }
-
 section#content {
   grid-area: content; }
 
@@ -396,6 +421,9 @@ header {
 
 footer {
   grid-area: footer; }
+
+body {
+  background-color: #f4f4df !important; }
 
 /*!
 Animate.css - http://daneden.me/animate
