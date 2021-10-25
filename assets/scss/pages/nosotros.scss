@@ -29,3 +29,10 @@
     margin-top: 10px;
     display: inline;
 }
+
+@media(max-width:768px) {
+  #playerIframe {
+    width: 230px;
+    height: 157px;
+  }
+}
